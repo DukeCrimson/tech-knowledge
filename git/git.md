@@ -94,10 +94,15 @@ Git 中的分支，其实本质上仅仅是个指向commit对象的可变指针,
     
     git rebase -i "commitId"^ ^号指的是commitId的前一次提交
 
+####git stash
 
-
+暂时存储代码，stash是仅在本地仓库的概念。
     
-
-
-
-
+    git stash (save 'stash-name') 存储暂存代码
+    git stash list 查看暂存列表
+    git stash apply stash@{0} 将暂存代码拉回代码库
+    git stash drop stash@{0} 删除某个stash
+    git stash clear 删除所有的stash
+    git stash branch newBranch 从stash创建一个新的分支
+    
+    git test for git reset now
