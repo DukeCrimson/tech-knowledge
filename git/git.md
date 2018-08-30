@@ -60,7 +60,11 @@ Git 中的分支，其实本质上仅仅是个指向commit对象的可变指针,
 
 远程回滚
 
-①删除最后一次远程提交 —— 
+①撤销指定文件到指定版本 —— 
+    查看指定文件的历史版本 git log <filename>
+    回滚到指定commitID git checkout <commitID> <filename>
+
+②删除最后一次远程提交 —— 
     
     方法一：使用revert
         
@@ -105,5 +109,3 @@ Git 中的分支，其实本质上仅仅是个指向commit对象的可变指针,
     git push origin branchname 在远程新建分支，并将本地的当前分支提交上去
     git branch --set-upstream-to origin/remotebranchName localbranchName
     本地分支与远程分支相关联
-    
-#这是测试回滚的数据
