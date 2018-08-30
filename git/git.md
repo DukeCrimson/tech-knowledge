@@ -104,3 +104,7 @@ Git 中的分支，其实本质上仅仅是个指向commit对象的可变指针,
     git stash drop stash@{0} 删除某个stash
     git stash clear 删除所有的stash
     git stash branch newBranch 从stash创建一个新的分支
+    
+    git push origin branchname 在远程新建分支，并将本地的当前分支提交上去
+    git branch --set-upstream-to origin/remotebranchName localbranchName
+    本地分支与远程分支相关联
