@@ -53,8 +53,7 @@ Git 中的分支，其实本质上仅仅是个指向commit对象的可变指针,
 
     git checkout filename 撤销修改
 
-④已在本地进行了多次git commit操作，现在想撤销到其中某次Commit。
-
+④已在本地进行了多次git commit操作，现在想撤销到其中某次Commit
     git reset [--hard|soft|mixed|merge|keep] [commit|HEAD
 
 
